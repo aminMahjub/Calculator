@@ -378,6 +378,7 @@ main > button:hover {
     }
     .div2{
         height: 60%;
+
         
     }
     input {
@@ -435,9 +436,11 @@ main > button:hover {
     }
     input{
        width: 70vw;
+       width: calc(100% - 300px);
     }
     main{
-       max-width: 80%;
+       height: 104%;
+       width: calc(100% - 300px);
     }
 }
 /*for 1200 width and more */
@@ -481,6 +484,7 @@ main > button:hover {
     }
     input{
        width: 70%;
+       width: calc(100% - 300px);
           
     }
     .restore{
