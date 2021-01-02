@@ -145,6 +145,12 @@ input {
     margin-bottom: 9%;
 
 }
+@media screen and (max-height:700px)
+{
+    input{
+    font-size: 7vh;
+    }
+}
 .grid-container {
     display: grid;
     grid-template-columns: 16% 16% 16% 16% 16% 16%;
