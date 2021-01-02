@@ -145,10 +145,10 @@ input {
     margin-bottom: 9%;
 
 }
-@media screen and (max-height:700px)
+@media screen and (max-height:600px)
 {
     input{
-    font-size: 7vh;
+    font-size: 40px;
     }
 }
 .grid-container {
