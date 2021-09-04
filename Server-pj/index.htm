@@ -1,0 +1,91 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="div1">
+        <div class="firstnav">
+            <span>Calculator</span>
+            <div class="computericon">
+                <button type="button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABmJLR0QA/wD/AP+gvaeTAAAALUlEQVQokWNgGAX0A4xQWoKBgYGDBH0/GBgYXsA4BxgYGP6TgA9QzeZRQA8AAP3vEHhGTdJFAAAAAElFTkSuQmCC" class="minus" /></button>
+                <button type="button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAAS0lEQVQ4jWNgGGjAiMR2gGJiwAEoZmAiwwAUdSxYTG4gYACKPBMuVcSCUQMGgwHo6cCBgXA6cGCApkIGBgYGZjIsfQA14AEZemkAACm/CR1y4eLyAAAAAElFTkSuQmCC" class="restore" /></button>
+                <button type="button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAASUlEQVQ4jWNgGIzgLQMDw38C+A0+A/4TYQlcDRMWm2EKaGozVheQBUYNIM+A/wyQKGdgYGBgYCHDAEZkDrIByAkJF3hLQH4AAACETxx7rzr6jwAAAABJRU5ErkJggg==" class="restoreup"/></button>
+                <button type="button" class="close">&#9587;</button>
+            </div>
+        </div>
+        <div class="aside">
+            <ul>
+                <li><button class="history-link default-link">History</button></li>
+                <li><button class="memory-link">Memory</button></li>
+            </ul>
+            <div class="memory-section default-section">
+                <p class="defualt pm">There's no memory saved</p>
+                <div class="show memory"></div>
+            </div>
+            <div class="history-section">
+                <p class="defualt ph">There's no history yet</p>
+                <div class="show items"></div>
+            </div>
+            <button class="claer-history"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAZUlEQVRIiWNgGCmggYGB4T8a7iBGIyMWsf8UOgbFTCYKDSMbwIKBYvU09wGxFqC7kGgfDhofjFowasGoBRQAFiLVoRfr2Ip5rGDAgugplEavxXBhZD1EAT8GBoYnJFjwBKpnGAIAUcAmPA1WYN0AAAAASUVORK5CYII="/></button>
+        </div>
+        <div class="extradiv"></div>
+        <div class="secondnav">
+            <button type="button" id="btnbar"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAAJElEQVQ4jWNgGHGAkYGBIY2aBjJR07BRQB0wGssjAYzG8iAEAEg7ATyMMo+GAAAAAElFTkSuQmCC"/></button>
+            <span>Standard</span>
+            <button type="button" class="minimize"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFFmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDIgNzkuMTY0NDYwLCAyMDIwLzA1LzEyLTE2OjA0OjE3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjEuMiAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIwLTEyLTE3VDE0OjA2OjQ2KzAzOjMwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMC0xMi0xN1QxNDoxMDozNyswMzozMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMC0xMi0xN1QxNDoxMDozNyswMzozMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5OGQ0NmQ4Mi1mZjA5LTliNGMtYjI1MS1iMzNmYWZlZDZiYTMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OThkNDZkODItZmYwOS05YjRjLWIyNTEtYjMzZmFmZWQ2YmEzIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6OThkNDZkODItZmYwOS05YjRjLWIyNTEtYjMzZmFmZWQ2YmEzIj4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo5OGQ0NmQ4Mi1mZjA5LTliNGMtYjI1MS1iMzNmYWZlZDZiYTMiIHN0RXZ0OndoZW49IjIwMjAtMTItMTdUMTQ6MDY6NDYrMDM6MzAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyMS4yIChXaW5kb3dzKSIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4sht1OAAAB8ElEQVQ4jX2TPWsUURSGn5kdYxKUBMWEcyMSDUQyojYKVtYpZBFb2y38Q3Zb2Iidv2AaIWCvMhCRIFHfIWr8iLqb7EeuxZxhF0UPXC73fL/vOTeRdA14C4yBFBgwkZbrh25ruX4JGAGzGfDalSeBDJjzdwIcAxE49HsMnACWgfeNU/SA6AGJV/uvSLoCjDJ/bALbU12sA4QQnkq6Abzxtj8BmyGEJ02RzBO+Aj46xhnXL7vthXf1zaHsur4PpE2rV739kZ9tDwK4DawAZ4EzwE/XD4GZTNJ5r54B57z9ESCHUfyDhnmglwFfmbDfB1569YGkO8AC8N0DDoC1EMJDh9vLgNMhhHfU45lm+brDegZ8Bk45kc+BJsEwNbM9SfOSLhVFwerqapOjBLbM7IOZHZnZvpN40e0jgLSqqhawUpblTqfTodvtNglSoPcH7hb1qBsSyYBbZVluefBhnucPgEfUY4xVVR0Av5yjm9S7gMMjnQomz/N7wGN36AN71H9jg3rU+8Blt0egT7vdjkVRREn3Jc1KyiTdjTEiackd/zqSLkhKEkkbTsiRV+0743PUy5O5rZEB9egrM4uJpAXq+aZMPlP0OwEWqXeh50mH7v+jYXqdekUxswhEM4tmdmxmY+CLme04H7vUW7sIrJlZ/A3O+8lnhAGdIAAAAABJRU5ErkJggg==" height="20" width="20" /></button>
+            <button type="button" class="history"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABnUlEQVRIid3Vv2oVURAG8N/1JmlCLCzuKwgaBAst/YOiIGosjIWpA4oIGrS1EgtBC32FNHkAnyCIRQQxicFobgSx0ioo/gHNtdhZ7rKeu7sXsYgfHA57vpn5zs4Mc/jfMYqLmMdrbOEbuljADMaaBuviaOF7Cm/Qq1kfMN1EoIcvOIa7hQCbuInDGEcH+3EFLwp2j9CuE+jhV+w/cRsjFT4tzMrS1sPjJgL5upOweYrFxPkRfA2/gekqC+TpStmkMKtfk2ThFxMi3SEEWvo1uTzoL+pQJQBXg1/4VwL7gl//W4HOAH5P8J9S5BM8U93LSxFgZYDIRPCfU85vg5ysEOhE8Fxkd4k/GNzL/GBXgXwee3FclPERJ7AaF9lb4o/Hvppyng715ZJwChM4VDprYy1inE05jeJ9GFyrEUhhLnzfqajj+TD6jpNDBD8jm0fbOFVn/KAgcl11utqySfsjfO43uU0LD/V7fg03ZEUdl3XOAdzCq4LdvSbBi7iADX/Op/LawOlhg+cYwSXZk7kum7BbsjacxzlDPJk7E78BiCOJMrCO34wAAAAASUVORK5CYII=" height="25" width="25" /></button>
+        </div><br>
+        <!--claculator header end-->
+        <!--calculate input start-->
+        <div id="input">
+            <p class="upper-input"></p>
+            <p class="input-value">0</p>
+        </div>
+    </div>
+    <div class="div2">
+        <div class="grid-container">
+            <div><button type="button" class="item1 memory-button" value="MC">MC</button></div>
+            <div><button type="button" class="item2 memory-button" value="MR">MR</button></div>
+            <div><button type="button" class="item3 memory-button" value="+">M+</button></div>
+            <div><button type="button" class="item4 memory-button" value="-">M-</button></div>
+            <div><button type="button" class="item5 memory-button" value="MS">MS</button></div>
+            <div><button type="button" class="item6 memory-button dropbtn" value="show">M<sup><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABmJLR0QA/wD/AP+gvaeTAAAAbUlEQVQYlaWOMQqFMBBEn5JN9ZscaW9gLR7OA9j9yioX2DbXSGUhZAubzycg2DgwzTyYGXirASDn/AkhSA/cvanqMQKIyArU3r+MESClNAPfrmBvrS3/CYBSSqy1bkB090lVz9shMxMzkxt40gUoAiI1vvmaBwAAAABJRU5ErkJggg=="></sup></button></div>
+            <div id="myDropdown" class="dropdown-content"></div>
+        </div>
+        <main>
+            <button type="button" class="grid1 operator" value="percent"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAABmJLR0QA/wD/AP+gvaeTAAABs0lEQVRIie3UMWsUURQF4G9XjanERQQhYispE0UUrBUigYC/YFOovYW2AcVG0MJN7U+w0UqwjCASa7EIpAtCIKk0Wcfi3cHhOYuzMwoWOc2bd+6de+6bOe9yhP8clzHT9uUeLmEJgwb5QxS430bsHN5GgQKHeG5y9wPsRN7CtGK9ithHjLAV+0cT3lmP+GhaMdJ/KMWOBXcWu9hDP8tflE62o9mn/w23Q/Bpxr8L/kKF62Mj+NUmxfNuq9xhxpf74xVuiKv4gJdtBb/Feirjy/1erAM8wRj38KOJYB3O4wBfMR/cchT+XMkb6WCUHGtRbCyZoYgmbkW8s1Fy9HAHX7CP17gesamN0hWrIbbhlwdu4BO+R5N3o+nOqE6UxeBWJMMUERvH89rfEMyN0sd2NLAU3LxkuAPMdRGrM8pcNPA+yy1H3XJepO4e1qGHF9KoeyiNOTgZ636WX97V2baCQ1yTTlKdKHXTB05k8alQZ5QSfek0u9KAL8U3pU96sY1gaZT1CfHHEd+KnFLsTRuxBX+eKDN4JrmykK7IK5xpI/ggigwb5J7GTR2vwiyudClwhH+On/IpcgWFD6EGAAAAAElFTkSuQmCC" class="grid1 operator" /></button>
+            <button type="button" class="grid2 operator" value="√"></button>
+            <button type="button" class="grid3 operator" value="sqr "></button>
+            <button type="button" class="grid4 operator" value="1/"></button>
+            <button type="button" class="grid5 claer-entry">CE</button>
+            <button type="button" class="grid6 clear-all">C</button>
+            <button type="button" class="grid7 operator" value="sqr(3) "></button>
+            <button type="button" class="grid8 back-space" value=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAABmJLR0QA/wD/AP+gvaeTAAABKElEQVRIie3VPUoDQRjG8Z8mamtnVNAj2Nla2HgCBStLPYBXMCewsRNU8AJWHkIQ/LpALCxEsNS12IlZJyaZZCVE2D8sy+4+u8888747Q0XFf2UqUVdHE6slvI5wkyqu4RxZyWOrmKAf9WC4jXvs4D11tIFD7Mcf7UUNp8HwEZtoDWkIr/GN6R7COi6wK0+4ERmu6O6HBuZGGNS34aW8DndYiJ6v4QXHBeNlPOEKs5G+KappTLFpHrD4i6YRBpPhJGiK1/EM9DUdlLBIO1mGt3AuJk82PQgPP+VTOIj1oM1wq3d/TF5S8pqe6dR06RfNn9a0zdi7N9V4mP802ZS0qU6hy7TfMviBPczIl8Jro62980Pq8TPxWHYZOolbyu2nzyXeraiYEL4AzIp60WtGttkAAAAASUVORK5CYII=" class="grid8 back-space"/></button>
+            <button type="button" class="grid9 operator" value="÷">÷</button>
+            <button type="button" class="grid10 number" value="7">7</button>
+            <button type="button" class="grid11 number" value="8">8</button>
+            <button type="button" class="grid12 number" value="9">9</button>
+            <button type="button" class="grid13 operator" value="*">X</button>
+            <button type="button" class="grid14 number" value="4">4</button>
+            <button type="button" class="grid15 number" value="5">5</button>
+            <button type="button" class="grid16 number" value="6">6</button>
+            <button type="button" class="grid17 operator" value="-">-</button>
+            <button type="button" class="grid18 number" value="1">1</button>
+            <button type="button" class="grid19 number" value="2">2</button>
+            <button type="button" class="grid20 number" value="3">3</button>
+            <button type="button" class="grid21 operator" value="+">+</button>
+            <button type="button" class="grid22 operator negative" value="negative()"></button>
+            <button type="button" class="grid23" value="0">0</button>
+            <button type="button" class="grid24 decimal" value=".">.</button>
+            <button type="button" class="grid25 equal" value="=">=</button>
+        </main>
+    </div>
+    <script src="./dist/main.js"></script>
+</body>
+
+</html>
