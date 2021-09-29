@@ -72,9 +72,23 @@ class View {
         this.calcInput.append(this.upperInput,this.resualtInput);
 
         // inner calc-memory-btns
-
-
-
+        for (let i = 0; i < 5; i++) {
+            this.memoryBtns = document.createElement('button');
+            this.memoryBtns.classList.add('memory-action-btn');
+            this.memoryBtns.textContent = 'M';
+            this.calcMemoryBtns.append(this.memoryBtns);
+        }
+        this.memoryClear = this.calcMemoryBtns.childNodes[0];
+        this.memoryClear.textContent += 'C';
+        this.memoryRecall = this.calcMemoryBtns.childNodes[1];
+        this.memoryRecall.textContent += 'R';
+        this.insertMemory = this.calcMemoryBtns.childNodes[2];
+        this.insertMemory.textContent += '+';
+        this.decreaseMemory = this.calcMemoryBtns.childNodes[3];
+        this.decreaseMemory.textContent += '-';
+        this.storeMemory = this.calcMemoryBtns.childNodes[4];
+        this.storeMemory.textContent += 'S'
+        
 
 
 
