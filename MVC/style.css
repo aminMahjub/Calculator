@@ -1,0 +1,194 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    
+}
+
+body {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e6e6e6;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 30px;
+    grid-template-columns: 100vw;
+}
+
+.container-body {
+    display: grid;
+    grid-template-rows: 50px 25% 7%;
+    grid-template-columns: 100vw;
+
+}
+
+.calc-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-title {
+    font-size: 17px;
+    font-weight: 400;
+    font-style: normal;
+    padding: 5px 5px;
+}
+
+.computer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-action-btn {
+    background-color: #e6e6e6;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.header-action-btn:hover {
+    background-color: #cfcfcf;
+}
+
+.close-icon:hover {
+    background-color: #e80e27;
+}
+
+.restore-down-icon {
+    display: none;
+}
+
+.calc-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.right-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-action-btn {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #e6e6e6;
+}
+
+.navbar-action-btn:hover {
+    background-color: #cfcfcf;
+}
+
+.standart-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    font-weight: 600;
+    font-style: normal;
+    margin-left: 5px;    
+}
+
+.keep-on-top-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 9px;
+}
+
+.calc-input {
+    padding: 40px 3px;
+    height: 20%;
+}
+
+.resualt-input {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-style: normal;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.calc-memory-btns {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}   
+
+.memory-action-btn {
+    width: 80vw;
+    height: 6vh;
+    background-color: #e6e6e6;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 560;
+    font-style: normal;
+}
+
+.memory-action-btn:hover {
+    background-color: #cfcfcf;
+}
+
+.calc-btns {
+    display: grid;
+    grid-template-rows: repeat(6,3fr);
+    grid-template-columns: repeat(4,1fr);
+}
+
+div[class^="line"] {
+    display: flex;
+}
+
+.calc-action-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e6e6;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    background-color: #fafafa;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.calc-action-btn:hover {
+    background-color: #cfcfcf;
+}
+
+.operation-btn-action {
+    background-color: #DCDCDC;
+    cursor: pointer;
+}
+
+.equal-btn {
+    background-color: #318CE7;
+    color: #fafafa;
+    cursor: pointer;
+}
+
+/*media query*/
+
+@media screen and (min-width: 700px) {
+    .calc-memory-btns {
+        width: 30vw;
+    }
+}
+
+
+

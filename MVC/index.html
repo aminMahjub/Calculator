@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" type="image/gif" href="icons/icons8-windows-10.svg"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="root">
+        <!-- <div class="calc-header">
+            <div class="header-title">Calculator</div>
+            <div class="computer-icon">
+                <button class="minimize-icon header-action-btn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABmJLR0QA/wD/AP+gvaeTAAAALUlEQVQokWNgGAX0A4xQWoKBgYGDBH0/GBgYXsA4BxgYGP6TgA9QzeZRQA8AAP3vEHhGTdJFAAAAAElFTkSuQmCC"/></button>    
+                <button class="restore-down-icon header-action-btn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAAS0lEQVQ4jWNgGGjAiMR2gGJiwAEoZmAiwwAUdSxYTG4gYACKPBMuVcSCUQMGgwHo6cCBgXA6cGCApkIGBgYGZjIsfQA14AEZemkAACm/CR1y4eLyAAAAAElFTkSuQmCC"/></button>
+                <button class="maximize-icon header-action-btn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAAWElEQVQ4jWNgGHGAEY1/hIGBQYZEM54wMDDYwDgsaJIyDAwMe6AGEwNsGBgYXJAF0A1kgBq2gHgHohrIRIJGosCogaMGDgYDseUUGyxiuACGWqoXDiMQAADHjghdpgG4DAAAAABJRU5ErkJggg=="/></button>
+                <button class="close-icon header-action-btn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAAoUlEQVQ4jeXTwQ2CMBjF8Z+CB0ZzCEdwBhMNm+iBeHEI4xJ6cQ+DHsSEECgFOek7ten7/n3t1/J3ShrzJVY4o+ypTbFBhluXaYcniqogBCsq77Yv8b4yHjugMZ5gweIbWAia4DAG9lH9norGeDCsLWlUsnkEdNYzj9akR25rwGQdTiPXBsNGQXPDv17e3K2uDHes8QgAS5y8H/wF11DKH9cLt1s66ZAoj0MAAAAASUVORK5CYII="/></button>
+            </div>
+        </div>
+        <div class="container-body">
+            <div class="calc-navbar">
+                <div class="right-section">
+                    <button class="navbar navbar-action-btn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAKElEQVRIiWNgGAXDHjAisf/TwmwmKhs6CgYhGE1Fo4ByMJqKRsEQAADWCQMKYvEFtQAAAABJRU5ErkJggg=="/></button>
+                    <div class="standart-title">Standard</div>
+                    <button class="keep-on-top-btn navbar-action-btn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAA6klEQVQ4jc3Ur06DMRSG8R9kBCzJEAiCwYDbBUxvgSkUN7B5CAoxOQUXABq7JbuGze8KJliQ/PGoiRboyL6wfiD2qOY0ffKmpz2sOxvJ+hDVkp4XPKXCOu4wKSms4QrjSiwcY4hn7MXabYawg5NUCG0h+icXGcIqepAKe3jIkPxMCDZLCgr5d2FlSa0uNCllYPF+C/ktYQP3whtdiWXCkdCcGfbRX1VWJIQmumjh9a/CVPaWI+O7KR+Y4hQ3OMN73HsU/2kOW1E2xm7uYeFhd9KEBzHZOa7lT50aLlkcX9vYwVGJhF/ja/2ZA1+/IgSPRD66AAAAAElFTkSuQmCC"/></button>
+                </div>
+                <button class="history-btn navbar-action-btn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABnUlEQVRIid3Vv2oVURAG8N/1JmlCLCzuKwgaBAst/YOiIGosjIWpA4oIGrS1EgtBC32FNHkAnyCIRQQxicFobgSx0ioo/gHNtdhZ7rKeu7sXsYgfHA57vpn5zs4Mc/jfMYqLmMdrbOEbuljADMaaBuviaOF7Cm/Qq1kfMN1EoIcvOIa7hQCbuInDGEcH+3EFLwp2j9CuE+jhV+w/cRsjFT4tzMrS1sPjJgL5upOweYrFxPkRfA2/gekqC+TpStmkMKtfk2ThFxMi3SEEWvo1uTzoL+pQJQBXg1/4VwL7gl//W4HOAH5P8J9S5BM8U93LSxFgZYDIRPCfU85vg5ysEOhE8Fxkd4k/GNzL/GBXgXwee3FclPERJ7AaF9lb4o/Hvppyng715ZJwChM4VDprYy1inE05jeJ9GFyrEUhhLnzfqajj+TD6jpNDBD8jm0fbOFVn/KAgcl11utqySfsjfO43uU0LD/V7fg03ZEUdl3XOAdzCq4LdvSbBi7iADX/Op/LawOlhg+cYwSXZk7kum7BbsjacxzlDPJk7E78BiCOJMrCO34wAAAAASUVORK5CYII=" height="25" width="25" /></button>
+            </div>
+            <div class="calc-input">
+                <div class="upper-input"></div>
+                <div class="resualt-input">0</div>
+            </div>
+            <div class="calc-memory-btns">
+                <button class="clear-memo memory-action-btn">MC</button>
+                <button class="recall-memo memory-action-btn">MR<butt/buttonذ>
+                <button class="insert-memo memory-action-btn">M+<butt/buttonذ>
+                <button class="decrease-memo memory-action-btn">M-</button>
+                <button class="store-memo memory-action-btn">MS</button>
+            </div>
+            <div class="calc-btns">
+                <button class="percent-btn calc-action-btn operation-btn-action"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAA9klEQVRIie2UOw6CQBRFj53f1sRVuAoLURtWopWfljXgWlyCn87EPRjssLFCi7lGVJCBUFB4EkLezHDfm5l3gT9VZQTsgaveTsq6BuAWEb8nPElJfM15eRIc9NEcaAELxbuPdRMgAm5AP0+CUIJtxR3FYWxNDwg0PssjDubM78BSSVa876AGbDS2UZyLAWbrn3cw1PxM8UU7KYSjiq/ANibex5x5hLmDUqkDR0z1ftniAGuJn4Bm2eJJLWlrxky6wBlT/VRjY+zN+JO0lrQ1YybPlgx4b0kbM2byqyWzzGiFR3pLOnyff8TLL9a4mF9yEmlm/FMxHpirXwLh4+GPAAAAAElFTkSuQmCC"/></button>
+                <button class="clear-entry calc-action-btn operation-btn-action">CE</button>
+                <button class="claer-all calc-action-btn operation-btn-action">C</button>
+                <button class="backspace-btn calc-action-btn operation-btn-action"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAAyklEQVRYhe2WTQrCMBBGX71AV63Fa+tKbxXE6ml00QkNYXBMmhKEPOiiP+F7+Zkm0Gg0/ogJeADvAlcyR+BeKDxZIAx/AqecHgjJAiXDkwUmYJYGs9yHdECvtOvl3SYBq+cdcFHEBsABN+CQK2D1HJZeOvnGSfAQPdNGxxT4JdwTB8ZCGl8FRtY6t8I1CStcFdDmqSpVpyBFYrdF6BlZy/CFXoZnljWjleGVDWXoqfoj8lgjkUrWZlRSIns7DiWqnAeg8oGk0Wjsxgd/FKiZgO+fBQAAAABJRU5ErkJggg=="/></button>
+                <button class="one-division-btn calc-action-btn operation-btn-action">1/x</button>
+                <button class="power-two-btn calc-action-btn operation-btn-action">x<sup>2</sup></button>
+                <button class="radical-two-btn calc-action-btn operation-btn-action">√</button>
+                <button class="division-btn calc-action-btn operation-btn-action">÷</button>
+                <button class="number7-btn calc-action-btn">7</button>
+                <button class="number8-btn calc-action-btn">8</button>
+                <button class="number9-btn calc-action-btn">9</button>
+                <button class="multiplay-btn calc-action-btn operation-btn-action">×</button>
+                <button class="number4-btn calc-action-btn">4</button>
+                <button class="number5-btn calc-action-btn">5</button>
+                <button class="number6-btn calc-action-btn">6</button>
+                <button class="minus-btn calc-action-btn operation-btn-action">-</button>
+                <button class="number1 calc-action-btn">1</button>
+                <button class="number2 calc-action-btn">2</button>
+                <button class="number3 calc-action-btn">3</button>
+                <button class="plus-btn calc-action-btn operation-btn-action">+</button>
+                <button class="negative-btn calc-action-btn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAANElEQVRIiWNgGGngPxQTDZho5JBRCwaRBYw4xElKKfjMo7kPSAWj+WDUguEIRl5OHgXUBwAfXwYXHiQjxgAAAABJRU5ErkJggg=="/></button>
+                <button class="zero-btn calc-action-btn">0</button>
+                <button class="dot-btn calc-action-btn">.</button>
+                <button class="equal-btn calc-action-btn equal-btn">=</button>
+            </div>
+        </div> -->
+    </div>    
+
+    <script src="javascript/app.js"></script>
+</body>
+</html>
